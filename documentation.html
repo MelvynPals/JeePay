@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JeePay</title>
+  <link rel="stylesheet" href="/css/loader.css">
+  <link rel="shortcut icon" href="pictures/JeePay - Logo.png">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a class="logo" href="#"><img src="pictures/JeePay - Logo.png" alt="Logo">JeePay</a>
+      <ul class="menu-nav">
+        <li class="menu-item">
+          <a href="/index.html" class="menu-text">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-text" id="active-tab">Documentation</a>
+        </li>
+        <li class="menu-item">
+          <a href="/contacts.html" class="menu-text">Contacts</a>
+        </li>
+      </ul>
+      <ul class="contacts">
+        <li> <a class="navigation-email" href="#">jeepaycompany@gmail.com</a> </li>
+        <li> <a class="telephone-num" href="#">+11 (000) 111-11-11</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="loader-container">
+    <div class="loader-container">
+      <div class="loader">
+        <div class="box box0">
+          <div></div>
+        </div>
+        <div class="box box1">
+          <div></div>
+        </div>
+        <div class="box box2">
+          <div></div>
+        </div>
+        <div class="box box3">
+          <div></div>
+        </div>
+        <div class="box box4">
+          <div></div>
+        </div>
+        <div class="box box5">
+          <div></div>
+        </div>
+        <div class="box box6">
+          <div></div>
+        </div>
+        <div class="box box7">
+          <div></div>
+        </div>
+        <div class="ground">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-container">
+    <h4>
+      Im sorry for the inconvenience, but this part of the page is still under development, please try again soon!
+    </h4>
+  </div>
+
+  <script defer>
+    let initialBodyVisibility = document.body.style.display;
+
+    window.addEventListener('resize', function () {
+      const currentWidth = window.innerWidth;
+      const isHidden = document.body.style.display === 'none';
+
+      if (currentWidth >= 1158 && isHidden) {
+        document.body.style.display = initialBodyVisibility;
+      } else if (currentWidth < 1158 && !isHidden) {
+        document.body.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
